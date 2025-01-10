@@ -35,8 +35,8 @@ class ProductController extends Controller
         $product->weight=$request->input('weight');
         $product->descriptions=$request->input('descriptions');
         $product->thumbnail=$request->input('thumbnail');
-        $product->image=$request->input('category');
-        $product->create_date=$request->input('create_date');
+        $product->image=$request->input('image');
+        $product->create_date=now();
         $product->stock=$request->input('stock');
         $product->save();
         return response()->json($task,201);
