@@ -8,6 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+    protected $fillable = [
+     'sku', 
+     'name', 
+     'price', 
+     'weight', 
+     'descriptions', 
+     'thumbnail', 
+     'image', 
+     'category',
+     'create_date',
+     'stock'
+     ];
     /*
     * The roles that belong to the Product
     *

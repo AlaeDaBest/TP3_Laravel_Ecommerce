@@ -1,17 +1,18 @@
 import React from "react";
 const Product=(props)=>{
     return(
-        <div>
-            <section>
-                <img src="{props.product.image}" alt="" />
-            </section>
-            <section>
-                <h3>{props.product.name}</h3>
-                <p>{props.product.price}</p>
-                <p>{props.product.descriptions}</p>
-                <p>{props.product.category}</p>
-            </section>
-        </div>
+            <tr>
+                <td>{props.product.sku}</td>
+                <td>{props.product.name}</td>
+                <td>{props.product.price}</td>
+                <td>{props.product.weight}</td>
+                <td>{props.product.descriptions}</td>
+                <td>.</td>
+                <td>.</td>
+                <td>{props.product.category}</td>
+                <td>{props.product.create_date}</td>
+                <td>{props.product.stock}</td>
+            </tr>
     )
 }
 export default Product;
